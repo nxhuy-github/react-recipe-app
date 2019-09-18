@@ -52,11 +52,13 @@ const App = () => {
         />
         <button className="search-button">Search</button>
       </form>
-      {recipes.map((ele, idx) => {
-        return (
-        <Recipe key={idx} recipe={ele} />
-        )
-      })}
+      <div className="recipes">
+        {recipes.map((ele, idx) => {
+          return (
+          <Recipe key={idx} recipe={ele} />
+          )
+        })}
+      </div>
     </div>
   );
 }
